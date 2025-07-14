@@ -1,0 +1,30 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AcessoParametrosSSM",
+      "Effect": "Allow",
+      "Action": [
+        "ssm:GetParameters",
+        "ssm:GetParameter",
+        "ssm:GetParametersByPath"
+      ],
+      "Resource": [
+        "arn:aws:ssm:*:*:parameter/amplify/*",
+        "arn:aws:ssm:*:*:parameter/amplify/d2jcbfap2y9vl9/aws-deploy-test/*"
+      ]
+    },
+    {
+      "Sid": "AcessoSecretsManager",
+      "Effect": "Allow",
+      "Action": [
+        "secretsmanager:GetSecretValue",
+        "secretsmanager:DescribeSecret"
+      ],
+      "Resource": [
+        "arn:aws:secretsmanager:*:*:secret:amplify/*",
+        "arn:aws:secretsmanager:*:*:secret:tmdb-api-*"
+      ]
+    }
+  ]
+}
