@@ -148,3 +148,5 @@ src/
 - ♾️ **Scroll infinito** - Carregamento automático
 - 📱 **Design responsivo** - Funciona em todos os dispositivos
 - 📊 **Modal de detalhes** - Informações completas dos filmes
+
+
