@@ -11,15 +11,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  // AWS deployment optimization
-  output: 'standalone',
-  experimental: {
-    esmExternals: 'loose'
-  },
-  // Ensure environment variables are available at build time
-  env: {
-    NEXT_PUBLIC_TMDB_API_TOKEN: process.env.NEXT_PUBLIC_TMDB_API_TOKEN,
-  },
 };
 
 export default nextConfig;

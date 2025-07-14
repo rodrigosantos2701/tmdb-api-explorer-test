@@ -3,6 +3,8 @@ frontend:
   phases:
     preBuild:
       commands:
+        - echo "NEXT_PUBLIC_TMDB_API_TOKEN=$NEXT_PUBLIC_TMDB_API_TOKEN" >> .env
+        - NEXT_PUBLIC_TMDB_API_TOKEN: process.env.NEXT_PUBLIC_TMDB_API_TOKEN,
         - npm install --legacy-peer-deps
     build:
       commands:
@@ -10,7 +12,7 @@ frontend:
   artifacts:
     baseDirectory: .next
     files:
-      - '**/*'
+      - "**/*"
   cache:
     paths:
       - node_modules/**/*
