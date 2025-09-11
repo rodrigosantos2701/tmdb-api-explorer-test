@@ -71,7 +71,7 @@ export default function Home() {
           TMDB Explorer
         </h1>
         <p className="text-gray-600 dark:text-gray-400 text-lg">
-          Descubra os melhores filmes do mundo !
+          Descubra os melhores filmes do mundo
         </p>
       </header>
     );
